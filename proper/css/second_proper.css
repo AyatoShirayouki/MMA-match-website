@@ -1,0 +1,139 @@
+header{
+    text-align: justify;
+    color: white;
+    background: rgb(71,66,71);
+    background: linear-gradient(0deg, rgba(71,66,71,0.7458333675266982) 99%, rgba(138,131,131,0.6702031154258579) 100%);
+    height: 100px;
+    margin-top: -10px;
+    width: 100%;
+    border-radius: 15px;
+}
+header h1{
+    margin-left: 5%;
+    font-size: 40px;
+    margin: 0;
+    position: relative;               
+    top: 50%;                         
+    transform: translate(0, -50%);
+}
+
+footer{
+    color: white;
+    background: rgb(71,66,71);
+    background: linear-gradient(0deg, rgba(71,66,71,0.7458333675266982) 99%, rgba(138,131,131,0.6702031154258579) 100%);
+    height: 100px;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+body{
+    background-image: url('background/tony3.jpg');
+} 
+
+.item1 {
+    grid-area: column1;
+    border-radius: 15px;
+}
+.item2 {
+    grid-area: column2;
+    border-radius: 15px; 
+}
+.item3 {
+    grid-area: column3;
+    border-radius: 15px; 
+}
+.item4 {
+    grid-area: column4;
+    border-radius: 15px; 
+}
+
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        'column1 column2 column3 column4';
+    grid-gap: 10px;
+    padding: 10px;
+    color: white;
+  
+}
+.grid-container :hover{
+    text-shadow: 2px 2px 5px gray;
+    -webkit-transform: scale(0.5);
+	transform: scale(1.01);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.grid-container > div {
+    background: rgb(6,6,6);
+    background: linear-gradient(0deg, rgba(6,6,6,0.3676821070224965) 12%, rgba(61,59,59,0.3536765047816002) 54%);
+    text-align: center;
+    padding: 20px 0;
+    
+}
+#p1{
+    width: 80%;
+    height: 50%;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    border-radius: 15px;
+    margin-left: 15%;
+  }
+  .win{
+      margin: 3px;
+      background-color: green;
+      border-radius: 15px;
+  }
+  .loss{
+      margin: 3px;
+      background-color:red;
+      border-radius: 15px;
+  }
+  .orange{
+    color: orange;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #474743;
+  }
+  tr:nth-child(odd) {
+    background-color: #8c8c82;
+  }
+  .tony{
+      text-align: left;
+      font-size: 20px;
+  }
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'column1 column1 column1 column1'
+        'column2 column2 column2 column2'
+        'column3 column3 column3 column3'
+        'column4 column4 column4 column4';
+    }
+    table{
+        margin-left: 5%;
+    }
+    header{
+        height: 180px;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    table{
+        margin-left: -0.3%;
+    }
+  }

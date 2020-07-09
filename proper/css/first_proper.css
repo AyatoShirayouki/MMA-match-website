@@ -1,0 +1,119 @@
+header{
+    text-align: justify;
+    color: white;
+    background: rgb(71,66,71);
+    background: linear-gradient(0deg, rgba(71,66,71,0.7458333675266982) 99%, rgba(138,131,131,0.6702031154258579) 100%);
+    height: 100px;
+    margin-top: -10px;
+    width: 100%;
+    border-radius: 15px;
+}
+header h1{
+    margin-left: 5%;
+    font-size: 40px;
+    margin: 0;
+    position: relative;               
+    top: 50%;                         
+    transform: translate(0, -50%);
+}
+
+footer{
+    color: white;
+    background: rgb(71,66,71);
+    background: linear-gradient(0deg, rgba(71,66,71,0.7458333675266982) 99%, rgba(138,131,131,0.6702031154258579) 100%);
+    height: 100px;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+body{
+    background-image: url('background/background.jpg');
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  
+.column {
+    float: left;
+    width: 23%;
+    padding: 10px;
+    height: 70%;
+    margin-right: 2%;
+    margin-top: 50px;
+    border-radius: 15px;
+    background: rgb(6,6,6);
+    background: linear-gradient(0deg, rgba(6,6,6,0.3676821070224965) 12%, rgba(61,59,59,0.3536765047816002) 54%);
+    color: white;
+}
+  
+.column img{
+    margin: 0;
+    position: relative;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+.column :hover{
+    text-shadow: 2px 2px 5px gray;
+    -webkit-transform: scale(0.5);
+	transform: scale(1.05);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#title{
+      text-align: center;
+      margin-bottom: 49px;
+}
+  #menu{
+      text-align: center;
+      font-size: 45px;
+  }
+  #divisions{
+      font-size: 25px;
+  }
+  #list li{
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  #tony{
+      text-align: center;
+  }
+  #justin{
+      text-align: center;
+  }
+  a{
+      color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  a{
+      text-decoration: none;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .column {
+      width: 45%;
+      margin-right: 4%;
+    }
+    
+  }
+  @media screen and (max-width: 1120px) {
+    .column {
+      width: 100%;
+    }
+    header{
+        height: 180px;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+  }
